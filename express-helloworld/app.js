@@ -1,8 +1,13 @@
 var express = require('express');
 app = express();
 
+var response;
+
 app.get('/', function (req, res) {
-  res.send('Hello World!\n');
+
+  response = 'Thi is version 2 of the app.' + '\n';
+
+  res.send(response);
 });
 
 app.listen(8080, function () {
